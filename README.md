@@ -1,16 +1,11 @@
-# React + Vite
+# 个人介绍前端网页
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+这是一个纯静态自我介绍页面。当前已在本地服务中运行，预览地址是 `http://localhost:4173`。
 
-Currently, two official plugins are available:
+需要替换的核心内容：
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- `index.html` 里的 `你的名字`、简介、项目、经历和邮箱。
+- `index.html` 里的反馈文案、能力描述和图片关键词。
+- `styles.css` 里的配色变量可以按个人风格调整。
 
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+当前版本没有构建工具依赖，页面使用 Satoshi 字体、Picsum 外链图片和 GSAP ScrollTrigger。

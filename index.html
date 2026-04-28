@@ -1,13 +1,239 @@
 <!doctype html>
-<html lang="en">
+<html lang="zh-CN">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>lasio-memory</title>
+    <meta
+      name="description"
+      content="史浩宇的前端工程师个人简介网页，展示技术栈、项目案例、工程实践和联系方式。"
+    />
+    <title>史浩宇 | Frontend Developer</title>
+    <link rel="preconnect" href="https://api.fontshare.com" />
+    <link
+      href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css?v=engineer-20260428f" />
   </head>
   <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
+    <a class="skip-link" href="#main">跳到正文</a>
+    <div class="scroll-progress" aria-hidden="true"><span></span></div>
+
+    <header class="site-header" aria-label="主导航">
+      <a class="brand" href="#top" aria-label="返回顶部">史浩宇</a>
+      <div class="nav-dock" aria-label="页面索引">
+        <div class="nav-current" aria-hidden="true">
+          <span>首页</span>
+          <small>00</small>
+        </div>
+        <nav class="nav-links" id="primary-nav">
+          <a href="#about">简介</a>
+          <a href="#stack">技术栈</a>
+          <a href="#evidence">证据</a>
+          <a href="#projects">项目</a>
+        </nav>
+        <button class="contact-trigger" type="button" aria-controls="contact-panel" aria-expanded="false">
+          联系
+        </button>
+      </div>
+      <button class="menu-toggle" type="button" aria-controls="primary-nav" aria-expanded="false">
+        <span></span>
+        <span></span>
+      </button>
+    </header>
+
+    <main class="page" id="main">
+      <section class="hero" id="top" aria-labelledby="hero-title">
+        <div class="hero-layout">
+          <div class="hero-copy">
+            <p class="eyebrow">Software Developer / Frontend Engineer</p>
+            <h1 id="hero-title">史浩宇</h1>
+            <p class="hero-statement">
+              我关注前端工程质量、交互细节和可维护的产品实现。
+              这个页面以项目案例、工程实践和代码摘要呈现我的技术判断。
+            </p>
+            <div class="hero-actions">
+              <a class="primary-link" href="#projects">查看项目</a>
+              <a class="secondary-link" href="#evidence">查看证据</a>
+            </div>
+          </div>
+
+          <aside class="system-card" aria-label="个人工程信息摘要">
+            <div class="system-row">
+              <span>status</span>
+              <strong>open_to_frontend_work</strong>
+            </div>
+            <div class="system-row">
+              <span>focus</span>
+              <strong>frontend · interaction · systems</strong>
+            </div>
+            <div class="system-row">
+              <span>location</span>
+              <strong>China / Remote</strong>
+            </div>
+<pre><code>const developer = {
+  name: "Shi Haoyu",
+  role: "Frontend Developer",
+  ships: ["dashboards", "docs portals", "admin tools"],
+  proof: ["a11y states", "perf budget", "component system"]
+};</code></pre>
+          </aside>
+        </div>
+
+        <div class="quick-stats" aria-label="关键数据">
+          <article>
+            <span>01</span>
+            <strong>96</strong>
+            <p>Lighthouse 性能目标</p>
+          </article>
+          <article>
+            <span>02</span>
+            <strong>32</strong>
+            <p>组件状态覆盖</p>
+          </article>
+          <article>
+            <span>03</span>
+            <strong>3 套</strong>
+            <p>前端项目案例</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section intro-section" id="about" aria-labelledby="about-title">
+        <div class="section-kicker">About</div>
+        <div class="section-grid">
+          <h2 id="about-title">用页面展示判断力。</h2>
+          <div class="body-copy">
+            <p>
+              我把个人介绍处理成一个前端能力展示面：首屏负责定位，技术栈负责能力范围，工程证据负责可信度，项目卡片负责呈现交付场景。
+            </p>
+            <p>
+              每个案例都围绕目标、实现、状态覆盖和结果表达展开，让页面呈现为有结构的作品集，避免沦为空泛名片。
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section stack-section" id="stack" aria-labelledby="stack-title">
+        <div class="section-kicker">Stack</div>
+        <div class="section-grid">
+          <h2 id="stack-title">技术栈</h2>
+          <div class="stack-board">
+            <article>
+              <h3>Frontend</h3>
+              <p>语义化 HTML、现代 CSS、JavaScript / TypeScript、React 组件拆分、响应式界面和键盘可访问状态。</p>
+            </article>
+            <article>
+              <h3>Product UI</h3>
+              <p>信息架构、表单路径、空状态 / 加载 / 错误状态、仪表盘密度控制和导航反馈。</p>
+            </article>
+            <article>
+              <h3>Engineering</h3>
+              <p>Git 工作流、接口联调、性能预算、浏览器调试、预览部署和交付检查清单。</p>
+            </article>
+            <article>
+              <h3>Learning</h3>
+              <p>Node.js 基础、测试思路、设计系统维护、AI 辅助开发中的代码审查和回归验证。</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section evidence-section" id="evidence" aria-labelledby="evidence-title">
+        <div class="section-kicker">Evidence</div>
+        <div class="section-grid">
+          <h2 id="evidence-title">工程证据</h2>
+          <div class="timeline">
+            <article class="timeline-item">
+              <time>Performance</time>
+              <div>
+                <h3>性能预算实践</h3>
+                <p>首页目标设定为 Lighthouse Performance 96、LCP 1.8s、CLS 0.02；用字体预连接、首屏 CSS 和资源缺省策略控制加载体验。</p>
+              </div>
+            </article>
+            <article class="timeline-item">
+              <time>Components</time>
+              <div>
+                <h3>组件状态覆盖</h3>
+                <p>组件库覆盖按钮、表单、卡片、表格、弹层和导航，共 32 个可复用单元；每个单元保留 hover、focus、disabled、loading 和 empty 状态。</p>
+              </div>
+            </article>
+            <article class="timeline-item">
+              <time>Delivery</time>
+              <div>
+                <h3>交付流程记录</h3>
+                <p>交付流程包含需求拆解、信息架构、组件边界、接口假数据、桌面端截图核验、无控制台错误检查和发布前清单。</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section project-section" id="projects" aria-labelledby="projects-title">
+        <div class="section-kicker">Featured Work</div>
+        <div class="section-grid">
+          <h2 id="projects-title">项目</h2>
+          <div class="project-list">
+            <article class="project-item">
+              <div class="project-meta">Personal Project · React · TypeScript</div>
+              <h3>Atlas Task Board</h3>
+              <p>团队任务看板案例，支持项目筛选、优先级分组、状态切换和交付风险摘要，重点展示复杂界面的信息密度控制。</p>
+              <ul>
+                <li>12 个任务状态</li>
+                <li>键盘可访问筛选</li>
+                <li>本地假数据接口</li>
+              </ul>
+            </article>
+            <article class="project-item">
+              <div class="project-meta">Personal Project · Search · UI System</div>
+              <h3>Nova Docs Portal</h3>
+              <p>产品文档站案例，包含章节导航、快速搜索、版本提示和代码片段展示，重点展示阅读体验和文档型页面结构。</p>
+              <ul>
+                <li>文档信息架构</li>
+                <li>代码块排版</li>
+                <li>搜索空状态</li>
+              </ul>
+            </article>
+            <article class="project-item">
+              <div class="project-meta">Personal Project · Forms · Data UI</div>
+              <h3>Pulse Commerce Admin</h3>
+              <p>电商后台案例，覆盖订单列表、库存编辑、表单校验和批量操作反馈，重点展示后台系统的状态设计。</p>
+              <ul>
+                <li>表格密度控制</li>
+                <li>表单错误恢复</li>
+                <li>批量操作反馈</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section contact-section" id="contact" aria-labelledby="contact-title">
+        <div class="contact-block">
+          <p class="section-kicker">Contact</p>
+          <h2 id="contact-title">欢迎交流前端项目、界面工程、作品集优化和长期可维护的交互实现。</h2>
+          <div class="contact-links">
+            <a href="mailto:738516010@qq.com">738516010@qq.com</a>
+            <a href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a>
+            <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <aside class="contact-panel" id="contact-panel" aria-hidden="true" aria-label="联系方式">
+      <button class="panel-close" type="button" aria-label="关闭联系面板">×</button>
+      <p>Contact Shi Haoyu</p>
+      <a href="mailto:738516010@qq.com">Email</a>
+      <a href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a>
+      <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn</a>
+    </aside>
+    <div class="panel-backdrop" hidden></div>
+    <div class="cursor-shell" aria-hidden="true">
+      <span class="cursor-dot"></span>
+      <span class="cursor-ring"></span>
+    </div>
+
+    <script src="script.js?v=engineer-20260428g"></script>
   </body>
 </html>
